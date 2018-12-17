@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.sadulla.tastyserveradmin.Common.Common;
 import com.example.sadulla.tastyserveradmin.Model.User;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -78,7 +79,9 @@ public class SignIn extends AppCompatActivity {
                             //LOGIN OK
                             Toast.makeText(SignIn.this, "< < SUCCESS! > >", Toast.LENGTH_SHORT).show();
                             Intent home = new Intent(SignIn.this, Home.class);
+                            Common.currentUser = user;
                             startActivity(home);
+                            finish();
                         }
                         else
                         {
