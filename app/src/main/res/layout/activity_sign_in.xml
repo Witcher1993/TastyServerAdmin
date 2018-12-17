@@ -1,9 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SignIn">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_centerInParent="true"
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/sign_in_phone_edit"
+            android:textSize="32sp"
+            android:inputType="phone"
+            android:hint="@string/phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+
+
+        <EditText
+            android:id="@+id/sign_in_password_edit"
+            android:hint="@string/password"
+            android:textSize="32sp"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sign_in_sign_in_button"
+        android:text="@string/sign_in"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:layout_margin="10dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
