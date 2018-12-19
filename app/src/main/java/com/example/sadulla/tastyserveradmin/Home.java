@@ -130,6 +130,10 @@ public class Home extends AppCompatActivity
 
 
 
+
+
+
+
     private void showDialog() {
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(Home.this);
         alertDialog.setTitle("ADD NEW CATEGORY");
@@ -333,11 +337,12 @@ public class Home extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_menu) {
-            // Handle the camera action
+
         } else if (id == R.id.nav_cart) {
 
         } else if (id == R.id.nav_orders) {
-
+            Intent orders = new Intent(Home.this, OrderStatus.class);
+            startActivity(orders);
         } else if (id == R.id.nav_sign_out) {
 
         }
