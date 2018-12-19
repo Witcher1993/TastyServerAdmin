@@ -14,7 +14,7 @@
         <EditText
             android:id="@+id/new_food_name_edit"
             android:hint="Name"
-            android:textSize="32sp"
+            android:textSize="26sp"
             android:textColorHint="@android:color/black"
             android:textColor="@android:color/black"
             android:inputType="text"
@@ -25,7 +25,7 @@
         <EditText
             android:id="@+id/new_food_description_edit"
             android:hint="Description"
-            android:textSize="24sp"
+            android:textSize="22sp"
             android:textColorHint="@android:color/black"
             android:textColor="@android:color/black"
             android:inputType="textMultiLine"
@@ -36,7 +36,7 @@
         <EditText
             android:id="@+id/new_food_price_edit"
             android:hint="Price"
-            android:textSize="32sp"
+            android:textSize="26sp"
             android:textColorHint="@android:color/black"
             android:textColor="@android:color/black"
             android:inputType="number"
@@ -46,7 +46,7 @@
         <EditText
             android:id="@+id/new_food_discount_edit"
             android:hint="Discount"
-            android:textSize="32sp"
+            android:textSize="24sp"
             android:textColorHint="@android:color/black"
             android:textColor="@android:color/black"
             android:inputType="number"
@@ -65,7 +65,7 @@
             <Button
                 android:id="@+id/select_button"
                 android:text="SELECT"
-                android:textSize="24sp"
+                android:textSize="18sp"
                 android:textColor="@android:color/black"
                 android:layout_margin="10dp"
                 android:layout_marginRight="8dp"
@@ -78,7 +78,7 @@
             <Button
                 android:id="@+id/upload_button"
                 android:text="UPLOAD"
-                android:textSize="24sp"
+                android:textSize="18sp"
                 android:textColor="@android:color/black"
                 android:layout_margin="10dp"
                 android:layout_marginRight="8dp"
